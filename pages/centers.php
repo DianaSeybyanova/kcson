@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -8,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="КЦСОН | Центры" />
+    <meta name="description" content="КЦСОН | Подразделения" />
     <link rel="icon" href="../images/logo_white.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +13,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>КЦСОН | Центры</title>
+    <title>КЦСОН | Подразделения</title>
+    <link rel="stylesheet" href="http://seybyanova.ru/dist/css/bvi.min.css" type="text/css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -27,12 +30,127 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.php">Главная</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Центры</li>
+                <li class="breadcrumb-item active" aria-current="page">Подразделения</li>
             </ol>
         </nav>
-        <div class="about__title pb-5"><strong>Центры</strong></div>
+        <div>
+            <h2 class="text-center pb-3">Подведомственные подразделения</h2>
+        </div>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 ">
+                    <!-- <div class="col">
+                        <div class="card card-hover h-100 p-4 rounded-3">
+                            <a href="/pages/center_kirov.php" class="text-center">Кировский район</a>
+                        </div>
+                    </div> -->
+
+
+                    <!-- <div class="col">
+                        <div class="card h-100 text-center card-hover rounded-3">
+                            <div class="card-body">
+                                <a href="/pages/center_zhd.php" class="link-card">Железнодорожный район</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center card-hover rounded-3">
+                            <div class="card-body">
+                                <a href="/pages/center_kirov.php" class="link-card">Кировский район</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center card-hover rounded-3">
+                            <div class="card-body">
+                                <a href="/pages/center_krasn.php" class="link-card">Красноглинский район</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center card-hover rounded-3">
+                            <div class="card-body">
+                                <a href="/pages/center_kuib.php" class="link-card">Куйбышевский район</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center card-hover rounded-3">
+                            <div class="card-body">
+                                <a href="/pages/center_oct.php" class="link-card">Октябрьский район</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center card-hover rounded-3">
+                            <div class="card-body">
+                                <a href="/pages/center_prom.php" class="link-card">Промышленный район</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center card-hover rounded-3">
+                            <div class="card-body">
+                                <a href="/pages/center_samlen.php" class="link-card">Самарский-Ленинский район</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center card-hover rounded-3">
+                            <div class="card-body">
+                                <a href="/pages/center_sov.php" class="link-card">Советский район</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    <div class="col">
+                        <a href="/pages/center_zhd.php" class="text-center">
+                            <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Железнодорожный район</div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="/pages/center_kirov.php" class="text-center">
+                            <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Кировский район</div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="/pages/center_krasn.php" class="text-center">
+                            <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Красноглинский район</div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="/pages/center_kuib.php" class="text-center">
+                            <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Куйбышевский район</div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="/pages/center_oct.php" class="text-center">
+                            <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Октябрьский район</div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="/pages/center_prom.php" class="text-center">
+                            <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Промышленный район</div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="/pages/center_samlen.php" class="text-center">
+                            <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Самарский-Ленинский район</div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="/pages/center_sov.php" class="text-center">
+                            <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Советский район</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
             <div class="col">
                 <div class="card h-100 card-hover">
                     <a href="./center_prom.php">
@@ -217,7 +335,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
     </main>

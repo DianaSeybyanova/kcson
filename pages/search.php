@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="КЦСОН | Вопросы" />
+    <meta name="description" content="КЦСОН | Поиск по сайту" />
     <link rel="icon" href="../images/logo_white.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>КЦСОН | Вопросы</title>
+    <title>КЦСОН | Поиск по сайту</title>
     <link rel="stylesheet" href="http://seybyanova.ru/dist/css/bvi.min.css" type="text/css">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -30,46 +30,33 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.php">Главная</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Вопросы</li>
+                <li class="breadcrumb-item active" aria-current="page">Поиск по сайту</li>
             </ol>
         </nav>
 
 
         <section class="first">
             <div class="container-small first__inner">
-                <div class="about__title"><strong>Вопросы</strong></div>
+                <div class="about__title"><strong>Поиск по сайту</strong></div>
 
             </div>
         </section>
 
         <section>
+            <form class="d-flex mt-5" target="_blank" method="POST">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <input type="submit" value="Поиск" id="submitBtn" />
 
-            <form class="row g-3  ">
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">ФИО</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Email</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12 ">
-                    <label for="inputAddress" class="form-label">Ваш вопрос</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="">
-                </div>
+                <!-- <button class="btn btn-outline-success" type="submit">Поиск</button> -->
+                <script>
+                    document.getElementById("submitBtn").addEventListener("click", myFunction);
 
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Прислать уведомление об ответе
-                        </label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Отправить</button>
-                </div>
+                    function myFunction() {
+                        window.location.href = "http://localhost:63249/index.php";
+                    }
+                </script>
             </form>
+
         </section>
 
     </main>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="КЦСОН | Промышленный район" />
+    <meta name="description" content="КЦСОН | Подразделение Промышленного района" />
     <link rel="icon" href="../images/logo_white.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +13,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>КЦСОН | Центры</title>
+    <title>КЦСОН | Подразделение Промышленного района</title>
+    <link rel="stylesheet" href="http://seybyanova.ru/dist/css/bvi.min.css" type="text/css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -24,77 +30,76 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.php">Главная</a></li>
-                <li class="breadcrumb-item"><a href="/pages/centers.php">Центры</a></li>
+                <li class="breadcrumb-item"><a href="/pages/centers.php">Подразделения</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Промышленный район</li>
             </ol>
         </nav>
-        <div class="about__title pb-5"><strong>Промышленный район</strong></div>
-
-        <div class="">
-            <div class="row  nav   nav-pills" id="v-pills-tab" role="tablist">
-                <button class="col mx-2 docs-tab active" id="docs-btn-tab-1" data-bs-toggle="pill" data-bs-target="#docs-tab-panel-1" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Семье и детям</button>
-                <button class="col mx-2 docs-tab" id="docs-btn-tab-2" data-bs-toggle="pill" data-bs-target="#docs-tab-panel-2" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Пожилым и инвалидам</button>
-                <!-- <button class="docs-tab" id="docs-btn-tab-3" data-bs-toggle="pill" data-bs-target="#docs-tab-panel-3" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Численность</button> -->
-
-            </div>
-            <div class="tab-content mt-3" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="docs-tab-panel-1" role="tabpanel" aria-labelledby="docs-btn-tab-1">
-
-
-                    <div class="row">
-                        <div class="col-6">
-                            <p><b>Юридический адрес:</b> 443029, Самарская область, г. Самара, ул. Солнечная, д.21
-
-                                8 (846) 200-08-98 – вахта/специалисты</p>
-
-                            <p> <b>Место нахождения:</b> 443087, Самарская область, г. Самара, пр. Кирова, д. 242</br>
-
-                                8 (846) 956-46-66 – специалисты</p>
-
-                            <p> <b>e-mail:</b> centersemya_prom@mail.ru</p>
-                        </div>
-                        <div class="col-6">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9152d233088b50a8d5fea8436b34d59c4984910aefb5fcd7908132efb9c3e3d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-                        </div>
-                    </div>
-
+        <div>
+            <h2 class="text-center pb-3">Промышленное подразделение</h2>
+            <div class="row  text-block">
+                <div class="col-4">
+                    <p><b>Режим работы:</b></br>
+                        понедельник – четверг: 8:30 - 17:30</br>
+                        пятница: 8:30 - 16:30</br>
+                        (перерыв с 12:42 до 13:30)
+                    </p>
                 </div>
-                <div class="tab-pane fade" id="docs-tab-panel-2" role="tabpanel" aria-labelledby="docs-btn-tab-2">
-                    <div class="row">
-                        <div class="col-6">
-                            <p><b>Юридический адрес:</b> 443063, г. Самара, ул. Средне-Садовая, 42</p>
-
-                            <p> <b>Место нахождения:</b> 443063, г. Самара, ул. Средне-Садовая, 42</br></p>
-
-                            <p> <b>Телефон:</b> 8(846) 250 51 50</p>
-
-                            <p> <b>e-mail:</b> centersemya_prom@mail.ru</p>
-                            <p>
-                                <b>Режим работы:</b></br>
-                                понедельник – четверг - 8.30 - 17.30</br>
-                                пятница - 8.30 - 16.30</br>
-                                (перерыв с 12.42 до 13.30)
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25769fe85cd222a1d2fb984aff57ae055917a80fa2e5dc59928bae6fc854105d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-                        </div>
-                    </div>
+                <div class="col-8">
+                    <p><b>Заместитель директора по Промышленному району – Шаталова Анастасия Юрьевна</b></p>
+                    <p><b>Часы приема:</b> 1 и 3 четверг месяца с 14:00 до 16:00,
+                        по предварительной записи по телефону <a href="tel:+78469564666" class="noline">8 846 956 46 66</a></p>
+                    <p><b>Адрес: </b>443087, г. Самара, проспект Кирова, д. 242</br></p>
                 </div>
-                <!-- <div class="tab-pane fade" id="docs-tab-panel-3" role="tabpanel" aria-labelledby="docs-btn-tab-3">
-                    <div class="text-block">
-
-                    </div>
-                </div> -->
-
             </div>
-            <div class="text-block">
-                <a href="/files/sot-promishl-2-2023.pdf">Список сотрудников подразделения</a>
-                <p><b>Заместитель директора: Шаталова Анастасия Юрьевна</b></p>
-                <p><b>Часы приема:</b> первый и третий четверг месяца с 14.00 до 16.00,
-                    предварительная запись по телефону: 8 (846) 956-46-66</p>
 
+            <h3 class="text-center py-3">Отделение по оказанию социальной помощи семье и детям</h3>
+            <div class="row g-3">
+                <div class="col-6 text-block">
+                    <p><b>Адрес: </b>443087, г. Самара, проспект Кирова, д. 242</br></p>
+                    <p><b>Телефон: </b><a href="tel:+78469564666" class="noline">8 846 956 46 66</a></p>
+                    <p><b>E-mail: </b><a href="mailto:centersemya_prom@mail.ru" class="noline">centersemya_prom@mail.ru</a></p>
+                    <p><b>Доступная среда:</b> <a href="/files/Доступная среда/Промышленное/Анкета Кирова 242.pdf" target="_blank">анкета обследования</a>
+                        и <a href="/files/Доступная среда/Промышленное/Паспорт Кирова 242.pdf" target="_blank">паспорт доступности</a></p>
+                </div>
+                <div class="col-6">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A212d232981e5d25ad03c1e40b52d9c4ee5cfa1324e22d116fc1373ade0f24381&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="col-6 text-block">
+                    <p><b>Адрес: </b>443029, г. Самара, ул. Солнечная, д. 21</br></p>
+                    <p><b>Телефон: </b><a href="tel:+78462000898" class="noline">8 846 200 08 98</a></p>
+                    <p><b>E-mail: </b><a href="mailto:centersemya_prom@mail.ru" class="noline">centersemya_prom@mail.ru</a></p>
+                    <p><b>Доступная среда:</b> <a href="/files/Доступная среда/Промышленное/Анкета Солнечная 21.pdf" target="_blank">анкета обследования</a>
+                        и <a href="/files/Доступная среда/Промышленное/Паспорт Солнечная 21.pdf" target="_blank">паспорт доступности</a></p>
+                </div>
+                <div class="col-6">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff6126e1b4090cf8796ec4fec3fa65b5bf467da2d6e99f292f68204aef2eb660&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
             </div>
+
+            <h3 class="text-center py-4">Отделение по оказанию социальной помощи пожилым гражданам и инвалидам</h3>
+            <div class="row g-3">
+                <div class="col-6 text-block">
+                    <p> <b>Адрес: </b>443063, г.Самара, ул. Средне-Садовая, д. 42</p>
+                    <p> <b>Телефон: </b><a href="tel:+78462505150" class="noline">8 846 250 51 50</a></p>
+                    <p> <b>E-mail: </b><a href="mailto:cso_prom@mail.ru" class="noline">cso_prom@mail.ru</a></p>
+                    <p><b>Доступная среда:</b> <a href="/files/Доступная среда/Советское/Анкета Средне-Садовая 42.pdf" target="_blank">анкета обследования</a>
+                        и <a href="/files/Доступная среда/Советское/Паспорт Средне-Садовая 42.pdf" target="_blank">паспорт доступности</a></p>
+                </div>
+                <div class="col-6">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A96aaf86ec366de48ccaa169ce5d6f1d05b98fd9fac0528692ba2be8325f95777&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="col-6 text-block">
+                    <p><b>Адрес: </b>443087, г. Самара, проспект Кирова, д. 242</br></p>
+                    <p><b>Телефон: </b><a href="tel:+78469564666" class="noline">8 846 956 46 66</a></p>
+                    <p><b>E-mail: </b><a href="mailto:cso_prom@mail.ru" class="noline">cso_prom@mail.ru</a></p>
+                    <p><b>Доступная среда:</b> <a href="/files/Доступная среда/Промышленное/Анкета Кирова 242.pdf" target="_blank">анкета обследования</a>
+                        и <a href="/files/Доступная среда/Промышленное/Паспорт Кирова 242.pdf" target="_blank">паспорт доступности</a></p>
+                </div>
+                <div class="col-6">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A212d232981e5d25ad03c1e40b52d9c4ee5cfa1324e22d116fc1373ade0f24381&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+
         </div>
 
 

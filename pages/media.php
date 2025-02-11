@@ -14,7 +14,13 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
       <title>КЦСОН | Медиа</title>
+      <link rel="stylesheet" href="http://seybyanova.ru/dist/css/bvi.min.css" type="text/css">
       <link rel="stylesheet" href="../css/style.css">
+
+      <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
@@ -28,51 +34,109 @@
                   <li class="breadcrumb-item active" aria-current="page">Медиа</li>
               </ol>
           </nav>
-          <div class="about__title pb-4"><strong>Медиа</strong></div>
+          <div>
+              <h2 class="text-center pb-3">Медиа</h2>
+          </div>
 
-          <section class="articles">
+          <section class="articles mt-4">
               <div class="container-small articles__inner">
-                  <h1><a href="/pages/articles.php">Статьи</a></h1>
-                  <div class="articles__blocks">
-                      <a href="" class="articles__blocks-link">
-                          <div class="articles__blocks-image"><img src="/images/article.png" alt="" class="blocks__image"></div>
-                          <div class="articles__blocks-text">Подведены итоги конкурса статей «Волонтёр - звучит гордо»</div>
-                          <div class="articles__blocks-date">29 декабря 2022 </div>
-                      </a>
-                      <a href="" class="articles__blocks-link">
-                          <div class="articles__blocks-image"><img src="/images/article.png" alt="" class="blocks__image"></div>
-                          <div class="articles__blocks-text">По зову сердца</div>
-                          <div class="articles__blocks-date">28 октября 2022</div>
-                      </a>
-                      <a href="" class="articles__blocks-link">
-                          <div class="articles__blocks-image"><img src="/images/article.png" alt="" class="blocks__image"></div>
-                          <div class="articles__blocks-text">"Волонтёр - звучит гордо"</div>
-                          <div class="articles__blocks-date">27 октября 2022</div>
-                      </a>
+                  <h2><a href="/pages/articles.php">Статьи</a></h2>
+
+                  <?php
+                    $mysqli = @new mysqli('localhost', 'u2606745_default', 'cHWcis8Iy3qIBe84', 'u2606745_test_data06112024');
+                    $mysqli->query('SET NAMES utf8');
+                    /*$mysqli = @new mysqli('localhost', 'u2606745_test_us', 'test_semya', 'u2606745_test_semya');*/
+                    if (mysqli_connect_errno()) {
+                        /*echo "Подключение невозможно: " . mysqli_connect_error();*/
+                    }
+                    $result_set = $mysqli->query('SELECT * FROM `lq_articles` ORDER BY `lq_articles`.`id` DESC LIMIT 3');
+                    ?>
+
+                  <div class="row row-cols-1 row-cols-md-3 g-2 g-lg-5">
+                      <?php
+                        while ($row = $result_set->fetch_assoc()) {
+                        ?>
+                          <div class="col">
+                              <a href="/pages/article.php?id=<?php print_r($row["id"]); ?>">
+                                  <div class="card card-noborder h-100">
+                                      <div class="articles__blocks-image2">
+                                          <img src="/images/article.png" alt="" class=" blocks__image">
+                                      </div>
+                                      <div class=" text-center p-1">
+                                          <small class="text-muted"><?php print_r(DateTime::createFromFormat('Y-m-d H:i:s', $row["date"])->format('d.m.Y')); ?></small>
+                                      </div>
+                                      <div class="card-body pt-0">
+                                          <p class="card-text"><?php print_r($row["name"]); ?></p>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                      <?php
+                        }
+                        $result_set->close();
+                        $mysqli->close();
+                        ?>
                   </div>
               </div>
           </section>
 
           <section class="articles mt-4">
               <div class="container-small articles__inner">
-                  <h1><a href="/pages/news.php">Новости</a></h1>
-                  <div class="articles__blocks">
-                      <a href="" class="articles__blocks-link">
-                          <div class="articles__blocks-image"><img src="/images/news.png" alt="" class="blocks__image"></div>
-                          <div class="articles__blocks-text">Учимся, играючи</div>
-                          <div class="articles__blocks-date">12 апреля 2024</div>
-                      </a>
-                      <a href="" class="articles__blocks-link">
-                          <div class="articles__blocks-image"><img src="/images/news.png" alt="" class="blocks__image"></div>
-                          <div class="articles__blocks-text">Обман и игра воображения</div>
-                          <div class="articles__blocks-date">12 апреля 2024</div>
-                      </a>
-                      <a href="" class="articles__blocks-link">
-                          <div class="articles__blocks-image"><img src="/images/news.png" alt="" class="blocks__image"></div>
-                          <div class="articles__blocks-text">Столкнулись с жестоким обращением?</div>
-                          <div class="articles__blocks-date">09 апреля 2024</div>
-                      </a>
+                  <h2><a href="/pages/news.php">Новости</a></h2>
+
+                  <?php
+                    $mysqli = @new mysqli('localhost', 'u2606745_default', 'cHWcis8Iy3qIBe84', 'u2606745_test_data06112024');
+                    $mysqli->query('SET NAMES utf8');
+                    /*$mysqli = @new mysqli('localhost', 'u2606745_test_us', 'test_semya', 'u2606745_test_semya');*/
+                    if (mysqli_connect_errno()) {
+                        /*echo "Подключение невозможно: " . mysqli_connect_error();*/
+                    }
+                    $result_set = $mysqli->query('SELECT * FROM `lq_news` ORDER BY `lq_news`.`id` DESC LIMIT 3');
+                    ?>
+
+                  <div class="row row-cols-1 row-cols-md-3 g-2 g-lg-5">
+                      <?php
+                        while ($row = $result_set->fetch_assoc()) {
+                        ?>
+                          <div class="col">
+                              <a href="/pages/article.php?id=<?php print_r($row["id"]); ?>">
+                                  <div class="card card-noborder h-100">
+                                      <div class="articles__blocks-image2">
+                                          <img src="/images/article.png" alt="" class=" blocks__image">
+                                      </div>
+                                      <div class=" text-center p-1">
+                                          <small class="text-muted"><?php print_r(DateTime::createFromFormat('Y-m-d H:i:s', $row["date"])->format('d.m.Y')); ?></small>
+                                      </div>
+                                      <div class="card-body pt-0">
+                                          <p class="card-text"><?php print_r($row["name"]); ?></p>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                      <?php
+                        }
+                        $result_set->close();
+                        $mysqli->close();
+                        ?>
                   </div>
+
+                  <!-- <div class="articles__blocks">
+                  <a href="" class="articles__blocks-link">
+                      <div class="articles__blocks-image"><img src="/images/news.png" alt="" class="blocks__image"></div>
+                      <div class="articles__blocks-text">Учимся, играючи</div>
+                      <div class="articles__blocks-date">12 апреля 2024</div>
+                  </a>
+                  <a href="" class="articles__blocks-link">
+                      <div class="articles__blocks-image"><img src="/images/news.png" alt="" class="blocks__image"></div>
+                      <div class="articles__blocks-text">Обман и игра воображения</div>
+                      <div class="articles__blocks-date">12 апреля 2024</div>
+                  </a>
+                  <a href="" class="articles__blocks-link">
+                      <div class="articles__blocks-image"><img src="/images/news.png" alt="" class="blocks__image"></div>
+                      <div class="articles__blocks-text">Столкнулись с жестоким обращением?</div>
+                      <div class="articles__blocks-date">09 апреля 2024</div>
+                  </a>
+              </div> -->
               </div>
           </section>
 

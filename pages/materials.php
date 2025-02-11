@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="КЦСОН | Сервисы" />
+    <meta name="description" content="КЦСОН | Полезная информация" />
     <link rel="icon" href="../images/logo_white.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>КЦСОН | Сервисы</title>
+    <title>КЦСОН | Полезная информация</title>
     <link rel="stylesheet" href="http://seybyanova.ru/dist/css/bvi.min.css" type="text/css">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -30,79 +30,94 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.php">Главная</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Сервисы</li>
+                <li class="breadcrumb-item active" aria-current="page">Полезная информация</li>
             </ol>
         </nav>
         <div>
-            <h2 class="text-center pb-3">Сервисы</h2>
+            <h2 class="text-center pb-3">Полезная информация</h2>
         </div>
-        <?php
-        $mysqli = @new mysqli('localhost', 'u2606745_default', 'cHWcis8Iy3qIBe84', 'u2606745_test_data06112024');
-        $mysqli->query('SET NAMES utf8');
-        /*$mysqli = @new mysqli('localhost', 'u2606745_test_us', 'test_semya', 'u2606745_test_semya');*/
-        if (mysqli_connect_errno()) {
-            /*echo "Подключение невозможно: " . mysqli_connect_error();*/
-        }
-        $result_set = $mysqli->query('SELECT * FROM `services` ORDER BY `services`.`name` ASC');
-        ?>
-
 
 
         <div class="row row-cols-1 row-cols-md-3 g-3">
-            <?php
-            while ($row = $result_set->fetch_assoc()) {
-                /*print_r($row);
-            echo "<br />";*/
+            <div class="col">
+                <a href="/pages/material.php?id=91" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Материалы конференции по психологическому здоровью</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=73" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Профилактика ГРИППА и ОРВИ</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=93" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Материалы родительских чтений 2023 год</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=56" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Педагог-психолог года</div>
+                </a>
+            </div>
+            <!-- <div class="col">
+                <a href="/pages/material.php?id=60" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Материалы Родительских чтений</div>
+                </a>
+            </div> -->
+            <div class="col">
+                <a href="/pages/material.php?id=58" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Социальный педагог года - 2018</div>
+                </a>
+            </div>
 
-            ?>
-                <div class="col">
-                    <a href="/pages/service.php?id=<?php print_r($row["id"]); ?>">
+            <div class="col">
+                <a href="/pages/material.php?id=64" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Конкурс методических объединений 2019</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=96" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Материалы родительских чтений 2022 год</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=94" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Материалы родительских чтений 2021 год</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=78" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Помощь родителям</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=95" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Материалы родительских чтений 2019 год</div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center"></div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center"></div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center"></div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/material.php?id=" class="text-center">
+                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center"></div>
+                </a>
+            </div>
 
-                        <div class="card card-hover p-4 rounded-3 h-100 ">
-                            <div class="card-body d-flex align-items-center justify-content-center">
-                                <p class="card-text text-center"><?php print_r(html_entity_decode($row["name"])); ?></p>
-                            </div>
-                        </div>
 
-                    </a>
-                </div>
-            <?php
-            }
-            $result_set->close();
-            $mysqli->close();
-            ?>
         </div>
-
-        <!-- <div class="row row-cols-1 row-cols-md-3 g-3">
-            <div class="col">
-                <a href="/pages/service.php?id=62" class="text-center">
-                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Школа приёмных родителей</div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/pages/service.php?id=76" class="text-center">
-                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Школа реабилитации и ухода</div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/pages/service.php?id=88" class="text-center">
-                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Центры дневного пребывания</div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/pages/service.php?id=77" class="text-center">
-                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Социальная реабилитация лиц, страдающих ментальными нарушениями</div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/pages/service.php?id=89" class="text-center">
-                    <div class="card card-hover p-4 rounded-3 h-100 justify-content-center">Центры активного долголетия</div>
-                </a>
-            </div>
-
-
-        </div> -->
-
 
 
         <!-- <div class="row">
